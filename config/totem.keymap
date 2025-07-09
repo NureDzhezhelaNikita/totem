@@ -23,7 +23,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    tapping-term-ms = <175>;
 };
 
 / {
@@ -102,18 +102,18 @@
 
         navigation {
             bindings = <
-            &none           &kp GRAVE                &kp UP                       &none                       &kp LBKT                &kp RBKT               &kp N7                &kp N8                &kp N9            &kp EQUAL
+            &none           &kp GRAVE                &kp UP                       &kp PG_UP                   &kp LBKT                &kp RBKT               &kp N7                &kp N8                &kp N9            &kp EQUAL
             &mt LEFT_GUI A  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW  &kp LEFT_BRACE          &kp RIGHT_BRACE        &mt RIGHT_SHIFT N4    &mt RIGHT_CONTROL N5  &mt RIGHT_ALT N6  &mt RIGHT_GUI MINUS
-&caps_word  &none           &none                    &none                        &none                       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N1                &kp N2                &kp N3            &kp N0               &kp BACKSLASH
+&caps_word  &none           &none                    &none                        &kp PG_DN                   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N1                &kp N2                &kp N3            &kp N0               &kp BACKSLASH
                                                      &kp ENTER                    &kp SPACE                   &to 0                   &to 2                  &mt DELETE BACKSPACE  &kp ESC
             >;
         };
 
         media {
             bindings = <
-       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none       &kp C_VOL_UP     &none           &none
-       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &kp C_PREV  &mt C_MUTE C_PP  &kp LS(C_NEXT)  &none
-&sl 3  &kp F11  &kp F12  &none   &none   &none      &none  &none       &kp C_VOL_DN     &none           &none  &sl 3
+       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none  &none       &kp C_VOL_UP     &none       &none
+       &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none  &kp C_PREV  &mt C_MUTE C_PP  &kp C_NEXT  &none
+&sl 3  &kp F11  &kp F12  &none   &none   &none      &none  &none       &kp C_VOL_DN     &none       &none  &sl 3
                          &none   &none   &to 0      &to 2  &none       &none
             >;
         };
